@@ -39,7 +39,7 @@ In the [weighted_score.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/m
 **3. API Integration and Data Enrichment**
 
 **Web Scraping & External Data:**
-After the initial similarity computations, [Hackathon_Brand_added_details.ipynb]([https://github.com/Capubsq/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb]) calls external APIs to fetch additional data, including product descriptions, and URLs (for image, Wikipedia pages etc) for each brand. This enrichment phase adds a new dimension to our dataset.
+After the initial similarity computations, [Hackathon_Brand_added_details.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb) calls external APIs to fetch additional data, including product descriptions, and URLs (for image, Wikipedia pages etc) for each brand. This enrichment phase adds a new dimension to our dataset.
 Advanced Brand Unification:
 With the added context from the API (e.g., product details and online content), our process goes a step further: even if brand names differ significantly in text (for example, “HP” versus “Hewlett Packard”), the enriched data helps us identify and merge them as the same entity based on similarity of the URLs/descriptions added to each brand name.
 
