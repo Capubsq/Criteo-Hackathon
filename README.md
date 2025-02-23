@@ -1,9 +1,10 @@
 # Hackathon - ESCP x Criteo
 
-
 ## Overview 
 
 This hackathon project aims to unify and standardize brand names for Criteo. By combining multiple similarity metrics into a weighted approach, our solution can automatically group brands that share common online footprints. A key component of our project involves using API calls to perform web scraping—extracting the first five Google search links for each brand—to help determine if different brand name variations actually refer to the same entity.
+
+<img width="660" alt="presentation" src="https://github.com/user-attachments/assets/11875850-39ea-4aba-955b-a50906c2cf05" />
 
 ## Motivation
 
@@ -44,6 +45,7 @@ With the added context from the API (e.g., product details and online content), 
 
 
 ### Result Vizualization:
+![vizualization](https://github.com/user-attachments/assets/209181cc-6420-4911-b09e-c2eb84940c13)
 
 
 **4. Future possible imporvments**
