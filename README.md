@@ -25,7 +25,7 @@ By solving this problem, Criteo not only enhances its service offering to existi
 **1. Data Cleaning and Preprocessing**
 
 **Translation & Cleaning**:
-Our pipeline begins by cleaning the raw brand data in the jupyter notebook [data_cleaning.ipynd](https://github.com/claraferrax/Criteo-Hackathon/blob/main/data_cleaning.ipynb) . This involves translating text from Korean to English and removing special characters and extraneous text. 
+Our pipeline begins by cleaning the raw brand data in the jupyter notebook [data_cleaning.ipynd](https://github.com/Capubsq/Criteo-Hackathon/blob/main/data_cleaning.ipynb) . This involves translating text from Korean to English and removing special characters and extraneous text. 
 The cleaned data is then saved as a CSV file, which serves as the foundation for all subsequent analyses.
 
 **2. Similarity Computation**
@@ -38,7 +38,7 @@ In the [weighted_score.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/m
 **3. API Integration and Data Enrichment**
 
 **Web Scraping & External Data:**
-After the initial similarity computations, [Hackathon_Brand_added_details.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb) calls external APIs to fetch additional data, including product descriptions, images, and URLs for each brand. This enrichment phase adds a new dimension to our dataset.
+After the initial similarity computations, [Hackathon_Brand_added_details.ipynb]([https://github.com/Capubsq/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb]) calls external APIs to fetch additional data, including product descriptions, images, and URLs for each brand. This enrichment phase adds a new dimension to our dataset.
 Advanced Brand Unification:
 With the added context from the API (e.g., product details and online content), our process goes a step further: even if brand names differ significantly in text (for example, “HP” versus “Hewlett Packard”), the enriched data helps us identify and merge them as the same entity.
 
