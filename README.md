@@ -39,16 +39,16 @@ In the [weighted_score.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/m
 **3. API Integration and Data Enrichment**
 
 **Web Scraping & External Data:**
-After the initial similarity computations, [Hackathon_Brand_added_details.ipynb]([https://github.com/Capubsq/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb]) calls external APIs to fetch additional data, including product descriptions, images, and URLs for each brand. This enrichment phase adds a new dimension to our dataset.
+After the initial similarity computations, [Hackathon_Brand_added_details.ipynb]([https://github.com/Capubsq/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb]) calls external APIs to fetch additional data, including product descriptions, and URLs (for image, Wikipedia pages etc) for each brand. This enrichment phase adds a new dimension to our dataset.
 Advanced Brand Unification:
-With the added context from the API (e.g., product details and online content), our process goes a step further: even if brand names differ significantly in text (for example, “HP” versus “Hewlett Packard”), the enriched data helps us identify and merge them as the same entity.
+With the added context from the API (e.g., product details and online content), our process goes a step further: even if brand names differ significantly in text (for example, “HP” versus “Hewlett Packard”), the enriched data helps us identify and merge them as the same entity based on similarity of the URLs/descriptions added to each brand name.
 
 
 ### Result Vizualization:
 ![vizualization](https://github.com/user-attachments/assets/209181cc-6420-4911-b09e-c2eb84940c13)
 
 
-**4. Future possible imporvments**
+**4. Future possible improvements**
    
  **Composite Similarity Metric:** In future iterations, we could enhance our model by assigning specific weights to the comparisons of various attributes—such as links, images, descriptions, and brand names. By integrating these weighted comparisons, we will compute a final composite similarity metric. Once the composite metric is calculated, brands with similarity scores exceeding a predefined threshold will be grouped together. This will enable even more accurate brand unification, ensuring that different representations of the same brand (like abbreviations and full names) are correctly merged.
 
