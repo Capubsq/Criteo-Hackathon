@@ -1,6 +1,6 @@
 # Hackathon - ESCP x Criteo
 
- ![pic](./figures/presentation.png)
+
 ## Overview 
 
 This hackathon project aims to unify and standardize brand names for Criteo. By combining multiple similarity metrics into a weighted approach, our solution can automatically group brands that share common online footprints. A key component of our project involves using API calls to perform web scraping—extracting the first five Google search links for each brand—to help determine if different brand name variations actually refer to the same entity.
@@ -31,20 +31,20 @@ The cleaned data is then saved as a CSV file, which serves as the foundation for
 **2. Similarity Computation**
 
 Initial Similarity Analysis:
-The cleaned CSV is processed in the [similarity.ipynb](https://github.com/claraferrax/Criteo-Hackathon/blob/main/similarity.ipynb) notebook, where we compute similarity between brand names using various metrics—such as fuzzy matching and Jaccard similarity. The final similarity values are then encapsulated in the [similarities.py](https://github.com/claraferrax/Criteo-Hackathon/blob/main/similarities.py) module, which offers easy-to-use functions for comparing both brand names and descriptions.
+The cleaned CSV is processed in the [similarity.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/main/similarity.ipynb) notebook, where we compute similarity between brand names using various metrics—such as fuzzy matching and Jaccard similarity. The final similarity values are then encapsulated in the [similarities.py](https://github.com/Capubsq/Criteo-Hackathon/blob/main/similarities.py) module, which offers easy-to-use functions for comparing both brand names and descriptions.
 Weighted Similarity Computation:
-In the [weighted_score.ipynb](https://github.com/claraferrax/Criteo-Hackathon/blob/main/weighted_score.ipynb) notebook, we apply a weighted similarity approach. This method aggregates similar sub-brands—such as grouping “Versace Jeans” and “Versace Kids” under the umbrella of “Versace”—by leveraging high similarity scores. The output is a DataFrame where brands with high internal similarity are clustered together.
+In the [weighted_score.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/main/weighted_score.ipynb) notebook, we apply a weighted similarity approach. This method aggregates similar sub-brands—such as grouping “Versace Jeans” and “Versace Kids” under the umbrella of “Versace”—by leveraging high similarity scores. The output is a DataFrame where brands with high internal similarity are clustered together.
 
 **3. API Integration and Data Enrichment**
 
 **Web Scraping & External Data:**
-After the initial similarity computations, [Hackathon_Brand_added_details.ipynb](https://github.com/claraferrax/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb) calls external APIs to fetch additional data, including product descriptions, images, and URLs for each brand. This enrichment phase adds a new dimension to our dataset.
+After the initial similarity computations, [Hackathon_Brand_added_details.ipynb](https://github.com/Capubsq/Criteo-Hackathon/blob/main/Hackathon_Brand_added_details.ipynb) calls external APIs to fetch additional data, including product descriptions, images, and URLs for each brand. This enrichment phase adds a new dimension to our dataset.
 Advanced Brand Unification:
 With the added context from the API (e.g., product details and online content), our process goes a step further: even if brand names differ significantly in text (for example, “HP” versus “Hewlett Packard”), the enriched data helps us identify and merge them as the same entity.
 
 
 ### Result Vizualization:
- ![Result](./figures/vizualization.gif)
+
 
 **4. Future possible imporvments**
    
